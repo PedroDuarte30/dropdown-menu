@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+}
+
+.select-menu {
+    width: 380px;
+    margin: 150px auto;
+}
+
+.select-menu .select-btn {
+    position: relative;
+    top: -140px;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+    background: #fff;
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.select-btn .icon-arrow {
+    font-size: 1.5rem;
+    transition: 1s;
+}
+
+.select-btn.active .icon-arrow {
+    transform: rotate(180deg);
+}
+
+.select-menu .list {
+    position: absolute;
+    width: 380px;
+    font-size: 1.5rem;
+    transform: translateY(-140px);
+    margin-top: 10px;
+}
+
+.list .option {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    background: #fff;
+    padding: 0 16px;
+    cursor: pointer;
+    transform-origin: top;
+    opacity: 0;
+    transform: scale(0) translateY(-65px);
+    margin-bottom: -55px;
+    transition: opacity .5s ease-in-out, transform .5s ease-in-out, margin-bottom .5s ease-in-out;
+    transform: scale(1) translateY(0);
+    transition-delay: calc(.1s * var(--i));
+}
+
+.select-btn.active~.list .option {
+    transition: opacity 1s ease-in-out, transform .5s ease-in-out, margin-bottom .5s ease-in-out;
+    transform: scale(1) translateY(0);
+    transition-delay: calc(.1s * var(--i));
+    opacity: 1;
+    margin-bottom: 0px;
+}
+
+/*Efeito hover nas opções*/
+.list .option:hover {
+    background: #f2f2f2;
+}
+
+/*Bordas arredondas no primeiro item (topo)*/
+.list .option:nth-child(1) {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/*Bordas arredondas no último item (baixo)*/
+.list .option:nth-child(5) {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/*Icone das opções*/
+.option .icon {
+    font-size: 1.8rem;
+    margin-right: 10px;
+}
+
+.option .option-text {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+
