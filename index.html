@@ -7,42 +7,53 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
     <title>Dropdown Menu</title>
   </head>
+
   <body>
-    <div class="select-menu" id="select-btn">
-      <span id="text">Dropdown Menu</span>
-      <ion-icon name="chevron-down-outline" class="icon-arrow"></ion-icon>
-    </div>
-    <ul class="list">
-      <li class="option" style="--i: 5">
-        <ion-icon name="logo-html5" class="icon"></ion-icon>
-        <span class="option-text">HTML5</span>
-      </li>
-      <li class="option" style="--i: 4">
-        <ion-icon name="logo-css3" class="icon"></ion-icon>
-        <span class="option-text">CSS3</span>
-      </li>
-      <li class="option" style="--i: 3">
-        <ion-icon name="logo-javascript" class="icon"></ion-icon>
-        <span class="option-text">JavaScript</span>
-      </li>
+    <div class="select-menu">
+      <div class="select-btn" id="select-btn">
+        <span id="text">Dropdown Select</span>
+
+        <ion-icon name="chevron-down-outline" class="icon-arrow"></ion-icon>
+      </div>
+
+      <ul class="list">
+        <li class="option" style="--i: 5">
+          <ion-icon name="logo-html5" class="icon"></ion-icon>
+          <span class="option-text">HTML</span>
+        </li>
+
+        <li class="option" style="--i: 4">
+          <ion-icon name="logo-css3" class="icon"></ion-icon>
+          <span class="option-text">CSS</span>
+        </li>
+
+        <li class="option" style="--i: 3">
+          <ion-icon name="logo-javascript" class="icon"></ion-icon>
+          <span class="option-text">JavaScript</span>
+        </li>
+
         <li class="option" style="--i: 2">
-        <ion-icon name="logo-figma" class="icon"></ion-icon>
-        <span class="option-text">Figma</span>
-      </li>
+          <ion-icon name="logo-figma" class="icon"></ion-icon>
+          <span class="option-text">Figma</span>
+        </li>
+
         <li class="option" style="--i: 1">
-        <ion-icon name="logo-react" class="icon"></ion-icon>
-        <span class="option-text">ReactJS</span>
-      </li>
-    </ul>
+          <ion-icon name="logo-react" class="icon"></ion-icon>
+          <span class="option-text">ReactJS</span>
+        </li>
+      </ul>
+    </div>
 
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
     ></script>
+
     <script
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <script src="assets/js/script.js"></script>
+
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

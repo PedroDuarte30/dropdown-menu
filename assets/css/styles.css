@@ -4,7 +4,7 @@ html {
     font-size: 62.5%;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,16 +21,17 @@ body {
 
 .select-menu {
     width: 380px;
-    margin: 150px auto;
+    margin: 150px auto;   
 }
 
 .select-menu .select-btn {
     position: relative;
     top: -140px;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     height: 55px;
-    background: #fff;
+    background: white;
     color: #333;
     font-size: 1.5rem;
     font-weight: 700;
@@ -82,24 +83,20 @@ body {
     margin-bottom: 0px;
 }
 
-/*Efeito hover nas opções*/
 .list .option:hover {
     background: #f2f2f2;
 }
 
-/*Bordas arredondas no primeiro item (topo)*/
 .list .option:nth-child(1) {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
 
-/*Bordas arredondas no último item (baixo)*/
 .list .option:nth-child(5) {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
 }
 
-/*Icone das opções*/
 .option .icon {
     font-size: 1.8rem;
     margin-right: 10px;
@@ -109,5 +106,3 @@ body {
     font-size: 1.5rem;
     color: #333;
 }
-
-
